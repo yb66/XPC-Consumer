@@ -72,6 +72,3 @@ I hope that helps.
 ## Licence
 
 See LICENCE.txt
-
-
-
