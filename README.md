@@ -28,7 +28,7 @@ You need to write a script and save it somewhere for the xpc-consumer to run whe
 
 ### Place the plist
 
-Copy the changed plist to `~/Library/LaunchAgents/`.
+Copy the changed plist to `~/Library/LaunchAgents/`
 
 ### Create log files
 
