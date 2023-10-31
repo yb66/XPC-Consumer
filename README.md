@@ -71,4 +71,4 @@ I hope that helps.
 
 ## Licence
 
-See LICENCE.txt
+See [[LICENCE.txt]](LICENCE.txt).
