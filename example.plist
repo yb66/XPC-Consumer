@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+<!-- 
+  <key>Disabled</key>
+  <true/>
+ -->
+  <key>Label</key>
+  <string>PROJECTNAME</string> <!-- change PROJECTNAME -->
+  <key>ProgramArguments</key>
+  <array>
+		<string>/usr/local/bin/xpc-consumer</string>
+			<string>PATH/TO/SCRIPT</string> <!-- change PATH/TO/SCRIPT -->
+		<string>EVENT_LABEL</string> <!-- change EVENT_LABEL -->
+  </array>
+
+  <key>LaunchEvents</key>
+  <dict>
+    <key>com.apple.iokit.matching</key>
+    <dict>
+      <key>EVENT_LABEL</key> <!-- change EVENT_LABEL to same as above -->
+			<dict>
+				<key>idVendor</key>
+				<integer>INTEGER</integer> <!-- change INTEGER -->
+				<key>idProduct</key>
+				<integer>OTHER_INTEGER</integer> <!-- change OTHER_INTEGER -->
+				<key>IOProviderClass</key>
+				<string>IOUSBDevice</string>
+				<key>IOMatchLaunchStream</key>
+				<true/>
+			</dict>
+		</dict>
+	</dict>
+
+  <key>Nice</key>
+  <integer>1</integer>
+
+  <key>StandardErrorPath</key>
+  <string>/Users/USERNAME/Library/Logs/PROJECTNAME/PROJECTNAME-stderr.log</string> <!-- change USERNAME and PROJECTNAME -->
+
+  <key>StandardOutPath</key>
+  <string>/Users/USERNAME/Library/Logs/PROJECTNAME/PROJECTNAME-stdout.log</string> <!-- change USERNAME and PROJECTNAME -->
+</dict>
+</plist>
